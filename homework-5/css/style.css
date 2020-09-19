@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-align: center;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  background-color: #121116;
+  color: #fff;
+  padding-top: 105px;
+  padding-bottom: 40px;
+}
+
+.logo {
+  width: 112px;
+  height: 36px;
+  display: inline-block;
+  text-align: center;
+}
+
+.social {
+  font-weight: normal;
+  padding-top: 50px;
+}
+
+hr {
+  width: 230px;
+  display: inline-block;
+}
+
+.blue {
+  color: #00c7fc;
+}
+
+.list {
+  padding-top: 25px;
+  padding-bottom: 90px;
+}
+
+li {
+  display: inline;
+  padding-right: 35px;
+}
+
+.google {
+  padding-right: 25px;
+}
