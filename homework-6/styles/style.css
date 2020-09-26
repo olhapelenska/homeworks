@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  font:15px ‘Proxima Nova’, Arial, Helvetica, sans-serif;
+  padding-top: 55px;
+  padding-bottom: 65px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  display: inline-block;
+  background-color: #1275b9;
+  width: 65px;
+  height: 65свpx;
+  text-align: center;
+  line-height: 65px;
+  margin: 0 auto;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+}
+
+.paragraph {
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+  margin: 0 20px;
+}
+
+p {
+  font:15px ‘Proxima Nova’, Arial, Helvetica, sans-serif;
+  color: #9d9d9d;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  margin: 20px 0 20px 0;
+}
+
+.icon-wrapper:hover {
+  color: #2a69a6;
+  background-color: white;
+  border: solid #1275b9;
+  border-width: 2px;
+}
