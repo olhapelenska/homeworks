@@ -1,0 +1,100 @@
+* {
+  margin 0;
+}
+
+body {
+  background-color: #3399cc;
+  color: #fff;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+header {
+  margin: 60px 0 40px;
+  font-size: 21px;
+}
+
+footer {
+  margin: 30px 0 165px;
+}
+
+.cities {
+  border: 3px solid #fff;
+  list-style: none; 
+  text-align: center;
+}
+
+ul {
+  font-size: 0;
+  padding-inline-start: 0;
+}
+
+i {
+  font-size: 25px;
+}
+
+li {
+  box-sizing: border-box;
+  font-size: 18px;
+  display: inline-block;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  width: 25%;
+}
+
+li:first-child {
+  width: 50%;
+}
+
+li:nth-child(2) {
+  background-color: #33cccc;
+}
+
+li:nth-child(3) {
+  background-color: #996699;
+  border-right: none;
+}
+
+li:nth-child(4) {
+  background-color: #c24747;
+}
+
+li:nth-child(5) {
+  background-color: #e2674a;
+}
+
+li:nth-child(6) {
+  background-color: #ffcc66;
+}
+
+li:nth-child(7) {
+  background-color: #99cc99;
+  border-right: none;
+}
+
+li:nth-child(8) {
+  background-color: #669999;
+}
+
+li:nth-child(9) {
+  background-color: #cc6699;
+  width: 50%;
+}
+
+li:nth-child(10) {
+  background-color: #339966;
+  border-right: none;
+}
+
+li:last-child {
+  background-color: #666699;
+  border-right: none;
+  border-bottom: none;
+  width: 100%;
+}
+
+li:hover {
+  opacity: 0.5;
+}

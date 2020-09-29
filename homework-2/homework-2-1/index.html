@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+  </head>
+  <body>
+    <form>
+      <header>
+        <h1>Покупки</h1>
+      </header>
+      <ol>
+        <li>
+          <input type="checkbox" id="sweets" name="sweets" value="sweets" />
+          <label for="sweets">Солодощі</label>
+          <ul>
+            <li>
+              <input
+                type="checkbox"
+                id="moonpie"
+                name="moonpie"
+                value="moonpie"
+              />
+              <label for="moonpie">Пряники</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="chocolate"
+                name="chocolate"
+                value="chocolate"
+              />
+              <label for="chocolate">Шоколадка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="candy" name="candy" value="candy" />
+              <label for="candy">Цукерки</label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="fruit" name="fruit" value="fruit" />
+          <label for="fruit">Фрукти</label>
+          <ul>
+            <li>
+              <input type="checkbox" id="banana" name="banana" value="banana" />
+              <label for="banana">Банани</label>
+            </li>
+            <li>
+              <input type="checkbox" id="peach" name="peach" value="peach" />
+              <label for="peach">Персики</label>
+            </li>
+            <li>
+              <input
+                type="checkbox"
+                id="watermelon"
+                name="watermelon"
+                value="watermelon"
+              />
+              <label for="watermelon">Кавун</label>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" id="bread" name="bread" value="bread" />
+          <label for="bread">Хліб</label>
+          <ul>
+            <li>
+              <input type="checkbox" id="white" name="white" value="white" />
+              <label for="white">Білий</label>
+            </li>
+            <li>
+              <input type="checkbox" id="wheat" name="wheat" value="wheat" />
+              <label for="wheat">Житній</label>
+            </li>
+          </ul>
+        </li>
+      </ol>
+      <button type="button" onclick="alert('Підтверджено!')">
+        Підтвердити
+      </button>
+    </form>
+  </body>
+</html>
