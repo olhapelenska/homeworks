@@ -39,8 +39,12 @@ img:first-child {
 
 .search {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 5%;
+  right: 3.5%;
+}
+
+i {
+  color: #bfd730;
 }
 
 ul {
@@ -113,4 +117,16 @@ p span {
   position: absolute;
   top: 90%;
   left: 50%;
+}
+
+/* li:hover {
+  border-top: 1px solid #bfd730;
+} */
+
+li:hover::before {
+  content: '______';
+  color: #bfd730;
+  position: absolute;
+  top: -10px;
+
 }
