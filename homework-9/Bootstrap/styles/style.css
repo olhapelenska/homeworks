@@ -66,3 +66,16 @@ body, html {
   font-weight: 900;
   font-size: 22px;
 }
+
+.footer {
+  font-size: 13px;
+  color: #99a5b0;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  margin: 100px 20px;
+}
