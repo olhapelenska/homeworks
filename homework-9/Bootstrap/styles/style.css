@@ -17,6 +17,9 @@ body, html {
 
 .container {
   background-color: #e2e7ec;
+  /* display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; */
 }
 
 .content-car {
