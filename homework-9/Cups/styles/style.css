@@ -1,0 +1,100 @@
+@font-face {
+  font-family: 'Miso';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Miso'), url('../fonts/miso.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Miso Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Miso Light'), url('../fonts/miso-light.woff') format('woff');
+}
+  
+  
+@font-face {
+  font-family: 'Miso Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Miso Bold'), url('../fonts/miso-bold.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  background-color: #fdde7e;
+  color: #333333;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 75%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.item {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  width: 30%;
+  height: 70%;
+  padding: 40px 105px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.money {
+  font-family: 'Miso Bold';
+  color: #02995b;
+  font-size: 70px;
+}
+
+header {
+  font-size: 56px;
+  font-family: "Miso";
+}
+
+.text {
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Miso Light';
+  color: #858585;
+}
+
+.bean {
+  position: absolute;
+  width: 10%;
+  top: 47%;
+  left: 46%;
+}
+
+.cup {
+  margin-left: 20px;
+}
+
+div:nth-child(2) {
+  height: 80%;
+  /* align-self: stretch; */
+}
+
+div:nth-child(2) .bean {
+  position: absolute;
+  top: 47%;
+  left: 46%;
+}
