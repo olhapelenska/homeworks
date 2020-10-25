@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Museo Sans Rounded';
+  src: url(../fonts/MuseoSansRounded-100.woff2);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #e1e1e1;
+  font-family: 'Museo Sans Rounded';
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  max-height: 600px;
+  height: 100%;
+  background-image: url('../images/Group\ 3\ copy.jpg'), url('../images/Layer\ 0.png');
+  background-size: 100%, 100%;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  background-color: #111a28;
+  width: 85.62%;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+}
+
+.cover {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shoe {
+  width: 100%;
+}
+
+.parametrs {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  text-transform: capitalize;
+  font-size: 24px;
+  opacity: 0.9;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.description {
+  text-transform: capitalize;
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.radio,
+.checkbox {
+  display: none;
+}
+
+input:checked + .star {
+  color: #f7bf16;
+}
+
+.selection {
+  padding: 10px; 
+  background-color: #111a28;
+  border: 1px solid #e1e1e1;
+  outline: unset;
+  border-radius: unset;
+  text-transform: capitalize;
+}
+
+.button {
+  font-size: 14px;
+  color: #e1e1e1;
+  padding: 15px 50px;
+  margin: 20px 0;
+  background-color: #202835;
+  border: 1px solid #e1e1e1;
+}
+
+.color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.radio-color {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.blue {
+  background-color: #1f273f;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.red {
+  background-color: #ed3333;
+}
+
+.turquoise {
+  background-color: #29e3ea;
+}
+
+input:checked + .radio-color {
+  border: 3px solid #e1e1e1;
+  width: 18px;
+  height: 18px;
+}
