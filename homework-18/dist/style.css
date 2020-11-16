@@ -1,0 +1,426 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  background-color: green;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .cards__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transform: translateX(-30%) translateY(-15%);
+}
+.container .cards__container .card {
+  position: absolute;
+}
+.container .cards__container .card input {
+  display: none;
+}
+.container .cards__container .card input:checked + label .front {
+  transform: perspective(400px) rotateY(90deg);
+}
+.container .cards__container .card input:checked + label .back {
+  transform: perspective(400px) rotateY(0deg);
+  transition-delay: 1.4s;
+}
+.container .cards__container .card .label {
+  position: relative;
+}
+.container .cards__container .card .label .side {
+  position: absolute;
+  width: 200px;
+  height: 300px;
+  background-color: #fff;
+  box-shadow: -0.5px 1px 1px #585757;
+  border-radius: 20px;
+  transition: 0.7s;
+}
+.container .cards__container .card .label .front {
+  padding: 10px;
+  transition-delay: 0.7s;
+}
+.container .cards__container .card .label .front img {
+  width: 100%;
+  height: 100%;
+}
+.container .cards__container .card .label .back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: perspective(400px) rotateY(-90deg);
+}
+
+.cards__container .card:nth-child(1) .label {
+  left: 5px;
+  top: 0.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(1) input:checked + label {
+  left: 20px;
+}
+
+.cards__container .card:nth-child(2) .label {
+  left: 10px;
+  top: 1px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(2) input:checked + label {
+  left: 40px;
+}
+
+.cards__container .card:nth-child(3) .label {
+  left: 15px;
+  top: 1.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(3) input:checked + label {
+  left: 60px;
+}
+
+.cards__container .card:nth-child(4) .label {
+  left: 20px;
+  top: 2px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(4) input:checked + label {
+  left: 80px;
+}
+
+.cards__container .card:nth-child(5) .label {
+  left: 25px;
+  top: 2.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(5) input:checked + label {
+  left: 100px;
+}
+
+.cards__container .card:nth-child(6) .label {
+  left: 30px;
+  top: 3px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(6) input:checked + label {
+  left: 120px;
+}
+
+.cards__container .card:nth-child(7) .label {
+  left: 35px;
+  top: 3.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(7) input:checked + label {
+  left: 140px;
+}
+
+.cards__container .card:nth-child(8) .label {
+  left: 40px;
+  top: 4px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(8) input:checked + label {
+  left: 160px;
+}
+
+.cards__container .card:nth-child(9) .label {
+  left: 45px;
+  top: 4.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(9) input:checked + label {
+  left: 180px;
+}
+
+.cards__container .card:nth-child(10) .label {
+  left: 50px;
+  top: 5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(10) input:checked + label {
+  left: 200px;
+}
+
+.cards__container .card:nth-child(11) .label {
+  left: 55px;
+  top: 5.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(11) input:checked + label {
+  left: 220px;
+}
+
+.cards__container .card:nth-child(12) .label {
+  left: 60px;
+  top: 6px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(12) input:checked + label {
+  left: 240px;
+}
+
+.cards__container .card:nth-child(13) .label {
+  left: 65px;
+  top: 6.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(13) input:checked + label {
+  left: 260px;
+}
+
+.cards__container .card:nth-child(14) .label {
+  left: 70px;
+  top: 7px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(14) input:checked + label {
+  left: 280px;
+}
+
+.cards__container .card:nth-child(15) .label {
+  left: 75px;
+  top: 7.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(15) input:checked + label {
+  left: 300px;
+}
+
+.cards__container .card:nth-child(16) .label {
+  left: 80px;
+  top: 8px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(16) input:checked + label {
+  left: 320px;
+}
+
+.cards__container .card:nth-child(17) .label {
+  left: 85px;
+  top: 8.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(17) input:checked + label {
+  left: 340px;
+}
+
+.cards__container .card:nth-child(18) .label {
+  left: 90px;
+  top: 9px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(18) input:checked + label {
+  left: 360px;
+}
+
+.cards__container .card:nth-child(19) .label {
+  left: 95px;
+  top: 9.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(19) input:checked + label {
+  left: 380px;
+}
+
+.cards__container .card:nth-child(20) .label {
+  left: 100px;
+  top: 10px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(20) input:checked + label {
+  left: 400px;
+}
+
+.cards__container .card:nth-child(21) .label {
+  left: 105px;
+  top: 10.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(21) input:checked + label {
+  left: 420px;
+}
+
+.cards__container .card:nth-child(22) .label {
+  left: 110px;
+  top: 11px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(22) input:checked + label {
+  left: 440px;
+}
+
+.cards__container .card:nth-child(23) .label {
+  left: 115px;
+  top: 11.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(23) input:checked + label {
+  left: 460px;
+}
+
+.cards__container .card:nth-child(24) .label {
+  left: 120px;
+  top: 12px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(24) input:checked + label {
+  left: 480px;
+}
+
+.cards__container .card:nth-child(25) .label {
+  left: 125px;
+  top: 12.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(25) input:checked + label {
+  left: 500px;
+}
+
+.cards__container .card:nth-child(26) .label {
+  left: 130px;
+  top: 13px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(26) input:checked + label {
+  left: 520px;
+}
+
+.cards__container .card:nth-child(27) .label {
+  left: 135px;
+  top: 13.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(27) input:checked + label {
+  left: 540px;
+}
+
+.cards__container .card:nth-child(28) .label {
+  left: 140px;
+  top: 14px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(28) input:checked + label {
+  left: 560px;
+}
+
+.cards__container .card:nth-child(29) .label {
+  left: 145px;
+  top: 14.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(29) input:checked + label {
+  left: 580px;
+}
+
+.cards__container .card:nth-child(30) .label {
+  left: 150px;
+  top: 15px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(30) input:checked + label {
+  left: 600px;
+}
+
+.cards__container .card:nth-child(31) .label {
+  left: 155px;
+  top: 15.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(31) input:checked + label {
+  left: 620px;
+}
+
+.cards__container .card:nth-child(32) .label {
+  left: 160px;
+  top: 16px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(32) input:checked + label {
+  left: 640px;
+}
+
+.cards__container .card:nth-child(33) .label {
+  left: 165px;
+  top: 16.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(33) input:checked + label {
+  left: 660px;
+}
+
+.cards__container .card:nth-child(34) .label {
+  left: 170px;
+  top: 17px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(34) input:checked + label {
+  left: 680px;
+}
+
+.cards__container .card:nth-child(35) .label {
+  left: 175px;
+  top: 17.5px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(35) input:checked + label {
+  left: 700px;
+}
+
+.cards__container .card:nth-child(36) .label {
+  left: 180px;
+  top: 18px;
+  transition: 1s;
+}
+
+.cards__container .card:nth-child(36) input:checked + label {
+  left: 720px;
+}

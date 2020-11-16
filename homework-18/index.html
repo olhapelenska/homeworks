@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plenska</title>
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="symbol-of-spades" viewBox="0 0 23.64 23.64">
+            <title>symbol-of-spades</title>
+            <path style="fill:#030104;" d="M6.995,19.049c2.077,0,3.852-1.48,4.827-2.5c0.976,1.02,2.746,2.5,4.823,2.5 c3.576,0,6.076-2.494,6.076-6.063c0-3.935-3.103-6.479-6.104-8.938c-1.417-1.162-2.885-2.362-4.01-3.696 C12.418,0.129,12.141,0,11.85,0h-0.058c-0.291,0-0.568,0.129-0.758,0.352c-1.126,1.332-2.593,2.533-4.01,3.695 c-3.002,2.459-6.106,5.002-6.106,8.938C0.919,16.555,3.417,19.049,6.995,19.049z"/>
+            <path style="fill:#030104;" d="M8.109,23.64c2.474-0.444,4.967-0.425,7.422,0c-2.455-3.692-3.711-10.833-3.711-10.833 S10.583,19.948,8.109,23.64z"/>
+        </symbol>
+        <symbol id="diamond-symbol" viewBox="0 0 40.731 40.731">
+            <title>diamond-symbol</title>
+            <path d="M37.761,19.833c0.114,0.164,0.184,0.363,0.184,0.578c0,0.431-0.271,0.797-0.653,0.938 c-1.546,1.096-9.82,7.307-16.016,18.733c-0.122,0.304-0.378,0.548-0.7,0.621c-0.084,0.021-0.168,0.027-0.252,0.027 c-0.339,0-0.656-0.156-0.832-0.453c-0.047-0.07-0.084-0.146-0.112-0.228c-0.804-1.56-6.132-11.422-15.984-18.756 c-0.358-0.152-0.608-0.507-0.608-0.921c0-0.008,0-0.016,0-0.022c-0.004-0.19,0.045-0.381,0.149-0.549 c0.118-0.19,0.295-0.333,0.499-0.41c1.279-0.894,9.649-7.022,15.965-18.612C19.499,0.334,19.899,0,20.376,0 c0.196,0,0.379,0.057,0.533,0.154c0.213,0.12,0.376,0.316,0.455,0.553c0.613,1.209,5.938,11.318,16.04,18.802 C37.548,19.587,37.672,19.698,37.761,19.833z"/>
+        </symbol>
+        <symbol id="heart" viewBox="0 -28 512.00002 512">
+            <title>heart</title>
+            <path d="m471.382812 44.578125c-26.503906-28.746094-62.871093-44.578125-102.410156-44.578125-29.554687 0-56.621094 9.34375-80.449218 27.769531-12.023438 9.300781-22.917969 20.679688-32.523438 33.960938-9.601562-13.277344-20.5-24.660157-32.527344-33.960938-23.824218-18.425781-50.890625-27.769531-80.445312-27.769531-39.539063 0-75.910156 15.832031-102.414063 44.578125-26.1875 28.410156-40.613281 67.222656-40.613281 109.292969 0 43.300781 16.136719 82.9375 50.78125 124.742187 30.992188 37.394531 75.535156 75.355469 127.117188 119.3125 17.613281 15.011719 37.578124 32.027344 58.308593 50.152344 5.476563 4.796875 12.503907 7.4375 19.792969 7.4375 7.285156 0 14.316406-2.640625 19.785156-7.429687 20.730469-18.128907 40.707032-35.152344 58.328125-50.171876 51.574219-43.949218 96.117188-81.90625 127.109375-119.304687 34.644532-41.800781 50.777344-81.4375 50.777344-124.742187 0-42.066407-14.425781-80.878907-40.617188-109.289063zm0 0"/>
+        </symbol>
+        <symbol id="clubs" viewBox="0 0 511.998 511.998">
+            <title>clubs</title>
+            <path d="M419.381,199.229c-26.651-12.378-51.541-12.674-74.177-7.186c18.441-21.827,29.058-50.472,27.396-81.642 C369.438,51,320.017,2.36,260.58,0.087c-66.578-2.542-121.353,50.67-121.353,116.682c0,28.699,10.393,54.937,27.567,75.273 c-22.636-5.488-47.526-5.192-74.177,7.186c-41.023,19.061-69.569,59.401-70.153,104.628 c-0.835,65.204,51.757,118.317,116.763,118.317c31.412,0,59.859-12.459,80.842-32.633v34.403c0,16.501-4.303,32.714-12.495,47.041 l-15.755,27.576c-3.422,5.991,0.907,13.438,7.797,13.438h112.766c6.899,0,11.219-7.446,7.797-13.438l-15.755-27.576 c-8.183-14.327-12.495-30.54-12.495-47.041V389.54c20.992,20.175,49.439,32.633,80.842,32.633 c65.006,0,117.607-53.113,116.763-118.317C488.95,258.629,460.403,218.289,419.381,199.229"/>
+            <path style="fill:#2A2D33;" d="M423.915,355.877c-13.621,13.805-31.752,21.385-51.142,21.385c-4.961,0-8.982,4.022-8.982,8.982 c0,4.961,4.022,8.982,8.982,8.982c24.196,0,46.934-9.506,63.927-26.729c16.991-17.2,26.197-40.066,25.888-64.288 c-0.063-4.96-4.136-8.93-9.096-8.867c-4.96,0.063-8.93,4.136-8.867,9.096C444.872,323.859,437.529,342.095,423.915,355.877z"/>
+        </symbol>
+    </svg>
+    <div class="container">
+        <div class="cards__container">
+            <div class="card">
+                <input type="checkbox" id="card1">
+                <label class="label" for="card1">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <div class="shape">
+                            <svg class="icon">
+                                <use xlink:href="#clubs" />
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card2">
+                <label class="label" for="card2">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <div class="shape">
+                            <svg class="icon" fill="red">
+                                <use xlink:href="#diamond-symbol" />
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card3">
+                <label class="label" for="card3">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card4">
+                <label class="label" for="card4">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card5">
+                <label class="label" for="card5">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card6">
+                <label class="label" for="card6">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card7">
+                <label class="label" for="card7">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card8">
+                <label class="label" for="card8">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card9">
+                <label class="label" for="card9">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card10">
+                <label class="label" for="card10">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card11">
+                <label class="label" for="card11">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card12">
+                <label class="label" for="card12">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card13">
+                <label class="label" for="card13">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card14">
+                <label class="label" for="card14">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card15">
+                <label class="label" for="card15">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card16">
+                <label class="label" for="card16">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card17">
+                <label class="label" for="card17">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card18">
+                <label class="label" for="card18">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card19">
+                <label class="label" for="card19">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card20">
+                <label class="label" for="card20">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card21">
+                <label class="label" for="card21">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card22">
+                <label class="label" for="card22">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card23">
+                <label class="label" for="card23">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card24">
+                <label class="label" for="card24">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card25">
+                <label class="label" for="card25">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card26">
+                <label class="label" for="card26">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card27">
+                <label class="label" for="card27">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card28">
+                <label class="label" for="card28">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card29">
+                <label class="label" for="card29">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card30">
+                <label class="label" for="card30">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card31">
+                <label class="label" for="card31">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card32">
+                <label class="label" for="card32">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card33">
+                <label class="label" for="card33">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#clubs" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card34">
+                <label class="label" for="card34">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#diamond-symbol" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card35">
+                <label class="label" for="card35">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon">
+                            <use xlink:href="#symbol-of-spades" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <div class="card">
+                <input type="checkbox" id="card36">
+                <label class="label" for="card36">
+                    <div class="side front">
+                        <img src="./images/740bdfde43a6acc7dd91ae8818ad4f7d.jpg" alt="card">
+                    </div>
+                    <div class="side back">
+                        <svg class="icon" fill="red">
+                            <use xlink:href="#heart" />
+                        </svg>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
