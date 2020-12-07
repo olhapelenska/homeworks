@@ -95,6 +95,10 @@ li:last-child {
   width: 100%;
 }
 
-li:hover {
-  opacity: 0.5;
+ul:hover li {
+  opacity: .5;
+}
+
+ul:hover li:hover {
+  opacity: 1;
 }

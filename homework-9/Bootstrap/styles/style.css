@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Neue Hans Kendrick Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Neue Hans Kendrick Regular'), url('../fonts/NeueHansKendrick-Regular.woff') format('woff');
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Neue Hans Kendrick Regular';
+  text-transform: uppercase;
+}
+
+body,
+html {
+  height: 100%;
+  background-color: #e2e7ec;
+}
+
+.wrapper {
+  background-color: #e2e7ec;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-car {
+  background-image: linear-gradient(transparent, black), url('../images/red-car.png');
+  background-size: cover;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.first-text {
+  width: 77%;
+  padding: 20px;
+}
+
+/* ght: 45%;
+}.wrapper-row {
+  hei */
+.content {
+  background-color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.images {
+  width: 100%;
+}
+
+.text {
+  height: 100%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Neue Hans Kendrick Regular';
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.dude {
+  margin-top: auto;
+}
+
+.grey-text {
+  font-size: 13px;
+  color: #818181;
+  margin-bottom: 20px;
+}
+
+.black-text {
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.footer {
+  font-size: 13px;
+  color: #99a5b0;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading {
+  margin: 100px 20px;
+}
