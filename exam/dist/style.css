@@ -1,0 +1,522 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+.wrapper {
+  max-width: 180rem;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.container {
+  max-width: 111rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header__main {
+  background-image: url("../images/header-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.header__main .main__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 26.5rem 0 13rem;
+}
+.header__main .main__container .main__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.header__main .main__container .main__text h1 {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+}
+.header__main .main__container .main__text p {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+.header__main .main__container .main__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 55%;
+  padding: 0.2rem;
+  margin: 5rem 0 11rem;
+  background-color: #fff;
+}
+.header__main .main__container .main__search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 2%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+.header__main .main__container .main__search input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  text-align: center;
+  letter-spacing: 0.3rem;
+}
+.header__main .main__container .main__search .search__button {
+  display: flex;
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5474fd;
+  padding: 2rem 1.5rem 1.5rem 2rem;
+}
+.header__main .main__container .main__search .search__button p {
+  padding-right: 1rem;
+  letter-spacing: 0.2rem;
+}
+.header__main .main__container .main__search .search__button .button__search {
+  fill: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.header__main .main__container .main__scroll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.header__main .main__container .main__scroll p {
+  text-transform: capitalize;
+  letter-spacing: 0.3rem;
+}
+.header__main .main__container .main__scroll .scroll__arrow {
+  fill: #fff;
+  width: 1.4rem;
+  height: 1.4rem;
+}
+.header .header__nav {
+  background-color: #5474fd;
+}
+.header .header__nav .nav__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header__nav .nav__container .nav__logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.5rem;
+  padding: 3rem 0.5rem;
+  flex: 1;
+}
+.header .header__nav .nav__container .nav__wrapper {
+  flex: 1;
+}
+.header .header__nav .nav__container .nav__wrapper input {
+  display: none;
+}
+.header .header__nav .nav__container .nav__wrapper label {
+  display: none;
+}
+.header .header__nav .nav__container .nav__wrapper .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__nav .nav__container .nav__wrapper .nav__list li {
+  padding: 3rem 0.5rem;
+  font-family: "Aleo", serif;
+  font-size: 1.4rem;
+  list-style: none;
+  text-transform: uppercase;
+  line-height: 2.6rem;
+  margin-left: 2.5rem;
+  height: 100%;
+}
+.header .header__nav .nav__container .nav__wrapper .nav__list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header .header__nav .nav__container .nav__wrapper .nav__list li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.why-choose-us {
+  background-image: url("../images/why-choose-us-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.why-choose-us .why-choose-us__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text {
+  flex: 1;
+  padding: 20rem 3rem 13rem 0;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text h2 {
+  font-family: "Aleo", serif;
+  font-size: 3.6rem;
+  text-transform: capitalize;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text p:first-of-type {
+  padding: 5.5rem 0 2.5rem;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text p:nth-of-type(2) {
+  padding-bottom: 4.5rem;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__text button {
+  border: none;
+  font-size: 1.4rem;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5474fd;
+  padding: 2rem 3.5rem;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__pictures {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 12rem 0;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__pictures div:first-child {
+  position: relative;
+  right: 12.5rem;
+}
+.why-choose-us .why-choose-us__container .why-choose-us__pictures div img {
+  max-width: 100%;
+}
+
+.search-select-book {
+  background-color: #333333;
+  padding: 10rem 0 12rem;
+}
+.search-select-book .search-select-book__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.search-select-book .search-select-book__container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 3.6rem;
+  line-height: 2.6rem;
+  font-family: "Aleo", serif;
+  text-transform: capitalize;
+}
+.search-select-book .search-select-book__container div p {
+  padding-top: 3rem;
+}
+.search-select-book .search-select-book__container div .icon {
+  width: 6rem;
+  height: 6rem;
+}
+.search-select-book .search-select-book__container div .icon__search {
+  fill: #5474fd;
+}
+.search-select-book .search-select-book__container div .icon__select {
+  fill: #ff6363;
+}
+.search-select-book .search-select-book__container div .icon__book {
+  fill: #00a2ff;
+}
+
+.first-location {
+  background-image: url("../images/first-location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.first-location .first-location__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.first-location .first-location__container .first-location__text {
+  flex: 0.5;
+  padding: 23rem 1.5rem 10rem 0;
+}
+.first-location .first-location__container .first-location__text div {
+  padding: 5rem 3rem 5rem 3rem;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+.first-location .first-location__container .first-location__text div p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.first-location .first-location__container .first-location__text div p:nth-of-type(2) {
+  text-transform: uppercase;
+  padding: 2.4rem 0 2.2rem;
+}
+.first-location .first-location__container .first-location__text div p:last-of-type {
+  font-size: 1.6rem;
+  padding-bottom: 4.3rem;
+}
+.first-location .first-location__container .first-location__text div button {
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5474fd;
+  padding: 2rem 6rem;
+}
+
+.second-location {
+  background-image: url("../images/second-location.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.second-location .second-location__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.second-location .second-location__container .second-location__text {
+  flex: 0.5;
+  padding: 23rem 0 10rem 1.5rem;
+}
+.second-location .second-location__container .second-location__text div {
+  padding: 5rem 3rem 5rem 3rem;
+  background-color: rgba(35, 35, 35, 0.9);
+}
+.second-location .second-location__container .second-location__text div p {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.6rem;
+}
+.second-location .second-location__container .second-location__text div p:nth-of-type(2) {
+  text-transform: uppercase;
+  padding: 2.4rem 0 2.2rem;
+}
+.second-location .second-location__container .second-location__text div p:last-of-type {
+  font-size: 1.6rem;
+  padding-bottom: 4.3rem;
+}
+.second-location .second-location__container .second-location__text div button {
+  border: none;
+  font-size: 1.6rem;
+  font-family: "Aleo", serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #5474fd;
+  padding: 2rem 6rem;
+}
+
+.reviews {
+  background-image: url("../images/what-tourist-say-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.reviews .reviews__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reviews .reviews__container h2 {
+  padding-top: 12rem;
+  font-family: "Aleo", serif;
+  font-size: 3.6rem;
+  text-transform: capitalize;
+}
+.reviews .reviews__container .tourist__review {
+  padding: 10rem 0 20rem;
+}
+.reviews .reviews__container .tourist__review div {
+  display: flex;
+}
+.reviews .reviews__container .tourist__review div .review__text {
+  padding: 5rem 5.3rem 4.5rem 6rem;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.reviews .reviews__container .tourist__review div .review__text p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+}
+.reviews .reviews__container .tourist__review div .review__text blockquote {
+  font-size: 1.4rem;
+  line-height: 2.6rem;
+}
+.reviews .reviews__container .tourist__review div .review__text blockquote .icon {
+  vertical-align: 1.4rem;
+  padding-right: 0.9rem;
+  color: #5474fd;
+  font-size: 2rem;
+}
+
+.footer {
+  background-color: #232323;
+  border-bottom: 1.5rem solid #fff;
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding: 12rem 0 5rem;
+}
+.footer .footer__container .footer__logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 0.4rem;
+}
+.footer .footer__container p {
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  padding: 1.5rem 0 3rem;
+}
+.footer .footer__container .footer__icons {
+  font-size: 1.6rem;
+  display: flex;
+  width: 17rem;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__icons i:first-child:hover {
+  color: #4267B2;
+}
+.footer .footer__container .footer__icons i:nth-child(2):hover {
+  color: #1DA1F2;
+}
+.footer .footer__container .footer__icons i:nth-child(3):hover {
+  color: #5474fd;
+}
+.footer .footer__container .footer__icons i:nth-child(4):hover {
+  color: #FF0000;
+}
+.footer .footer__container .footer__icons i:last-child:hover {
+  color: #E60023;
+}
+
+@media all and (max-width: 1200px) {
+  html {
+    font-size: 7px;
+  }
+
+  .why-choose-us .why-choose-us__container .why-choose-us__pictures div img {
+    max-width: 100%;
+    display: block;
+  }
+  .why-choose-us .why-choose-us__container .why-choose-us__pictures div:first-child {
+    position: relative;
+    right: 0;
+  }
+}
+@media all and (max-width: 800px) {
+  html {
+    font-size: 5px;
+  }
+
+  .nav__container {
+    flex-direction: column;
+  }
+
+  .tourist__review div {
+    flex-direction: column;
+  }
+  .tourist__review div div img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .why-choose-us .why-choose-us__container {
+    flex-direction: column;
+  }
+  .why-choose-us .why-choose-us__container .why-choose-us__pictures {
+    padding: 0 0 2rem;
+  }
+  .why-choose-us .why-choose-us__container .why-choose-us__pictures div img {
+    max-width: 100%;
+    display: block;
+  }
+  .why-choose-us .why-choose-us__container .why-choose-us__pictures div:first-child {
+    position: relative;
+    right: 0;
+  }
+}
+@media all and (max-width: 320px) {
+  html {
+    font-size: 5px;
+  }
+
+  .tourist__review div {
+    flex-direction: column;
+  }
+  .tourist__review div div img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .search-select-book div p {
+    font-size: 3rem;
+  }
+
+  .footer .footer__container {
+    padding: 5rem 0 5rem;
+  }
+  .footer .footer__container .footer__icons {
+    font-size: 4rem;
+    width: 30rem;
+  }
+}
