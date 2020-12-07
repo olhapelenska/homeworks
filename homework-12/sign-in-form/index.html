@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pelenska</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <div class="wrapper__tabs">
+        <input class="tabs__input" type="radio" name="tabs" id="sign" checked>
+        <label class="tabs__label sign" for="sign">Sign in</label>
+        <input class="tabs__input" type="radio" name="tabs" id="join">
+        <label class="tabs__label join" for="join">Join us</label>
+        <div class="contents content__sign">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" required>
+          <div class="contents__checkbox">
+            <input class="checkbox"  type="checkbox" name="keep" id="keep">
+            <label class="checkbox__label" for="keep">
+              <div class="form__checkbox"></div>
+              Keep me signed in
+            </label>
+          </div>
+          <button class="btn" type="submit">Sign in</button>
+          <div class="links">
+            <a class="link" href="#">Forgot password</a>
+            <a class="link" href="#">Create an account</a>
+          </div>
+        </div>
+        <div class="contents content__join">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required>
+          <label for="password">Repeat password</label>
+          <input type="password" name="password" id="password" required>
+          <button class="btn" type="submit">Join</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
