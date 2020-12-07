@@ -45,7 +45,7 @@ alert(threeDigitNumberBackwards);
 //Пользователь вводит сумму вклада в банк на 2 месяца, с процентной ставкой депозита 5% годовых. Вывести сумму начисленных процентов.
 let sumPerTwoMonth = prompt('Enter an ammount of deposit for 2 months.');
 let percentPerTwoMonths = 5 / 100 / 12 * 2;
-alert(sumPerTwoMonth * percentPerTwoMonths);
+alert(sumPerTwoMonth * percentPerTwoMonths); 
 
 //работа с переменными
 let admin;
@@ -55,17 +55,31 @@ admin = name;
 alert(admin);
 
 //шаблонные строки Что выведет этот скрипт?
-let name = "Ilya";
-alert( `hello ${1}` ); // hello 1
-alert( `hello ${"name"}` ); // hello name
-alert( `hello ${name}` ); // hello Ilya
+//let name = "Ilya";
+//alert( `hello ${1}` ); // hello 1
+//alert( `hello ${"name"}` ); // hello name
+//alert( `hello ${name}` ); // hello Ilya
 
 //Исправьте сложение
 let a = prompt("Первое число?", 1);
 let b = prompt("Второе число?", 2);
 alert(a + b); // 12
 
-let a = +prompt("Первое число?", 1);
-let b = +prompt("Второе число?", 2);
-alert(a + b); // 3
+// let a = +prompt("Первое число?", 1);
+// let b = +prompt("Второе число?", 2);
+// alert(a + b); // 3
+
+//arrays
+const schedule = ['wake up', 'eat', 'film a video', 'watch things on netflix'];
+schedule.pop(); // removes the last valur
+schedule.unshift('a new one'); // adds a value to the beggining
+schedule.shift(); // removes the first value
+schedule.push('hey a new thing got added'); // adds a new value to the 
+schedule.indexOf('eat'); //index number
+console.log(schedule.indexOf('eat')); // outputs an index of the value
+const film = schedule.indexOf('film a video'); // store it in a variable
+console.log(film); // we get an index
+console.log(schedule[film]); // we get a value of that index
+
+//objects
 
