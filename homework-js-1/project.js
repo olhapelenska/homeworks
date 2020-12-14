@@ -71,7 +71,7 @@ alert(a + b); // 12
 
 //arrays
 const schedule = ['wake up', 'eat', 'film a video', 'watch things on netflix'];
-schedule.pop(); // removes the last valur
+schedule.pop(); // removes the last value
 schedule.unshift('a new one'); // adds a value to the beggining
 schedule.shift(); // removes the first value
 schedule.push('hey a new thing got added'); // adds a new value to the 
