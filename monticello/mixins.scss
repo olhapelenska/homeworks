@@ -1,0 +1,20 @@
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin fontGothamBook14() {
+  font-family: 'Gotham Book';
+  font-size: 1.4rem;
+}
+
+@mixin fontGothamBook18() {
+  font-family: 'Gotham Book';
+  font-size: 1.8rem;
+}
+
+@mixin fontGothamMedium44() {
+  font-family: 'Gotham Medium';
+  font-size: 4.4rem;
+}
