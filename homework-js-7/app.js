@@ -36,3 +36,31 @@ circle.circleSquare();
 circle.circleLength();
 
 // 2) Реализовать класс, описывающий простой маркер. В классе должны быть следующие компоненты:
+class SimpleMarker {
+  constructor(color, ink) {
+    this.color = color;
+    this.ink = ink;
+  }
+  print(stroke) {
+    for (let letter of stroke) {
+      if (letter != " ") {
+        this.ink -= 0.5;
+      }
+    }
+    document.write(`<p style="color: ${this.color}">${stroke}</p>`);
+  }
+}
+
+class RefuelingMarker extends SimpleMarker {
+  constructor(color, ink) {
+    super(color, ink);
+  }
+  refuel(amount) {
+    this.ink += amount;
+  }
+}
+
+let newMarker = new RefuelingMarker("blue", 10);
+newMarker.print("hello, how are you?");
+newMarker.refuel(3);
+console.log(newMarker.ink);
