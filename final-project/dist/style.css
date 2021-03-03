@@ -492,7 +492,13 @@ html {
   padding: 3rem 0;
 }
 .modal__form input {
-  color: #171c1f;
+  background: none;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #FDC400;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-left: 1rem;
 }
 .modal__form label {
   font-size: 2rem;
