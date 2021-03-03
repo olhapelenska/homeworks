@@ -1,0 +1,15 @@
+{
+  "name": "Olya",
+  "age": 2,
+  "hair": "dark blond",
+  "height": 174,
+  "weight": 63,
+  "eyeColor": "blue",
+  "hobbies": ["swimming", "watching youtube", "skiing"],
+  "friends": [{
+    "name": "Liana",
+    "favouriteNumber": 3,
+    "isProgramer": false,
+    "friends": [...]
+  }]
+}

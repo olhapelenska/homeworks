@@ -64,3 +64,42 @@ let newMarker = new RefuelingMarker("blue", 10);
 newMarker.print("hello, how are you?");
 newMarker.refuel(3);
 console.log(newMarker.ink);
+
+// 3) Реализовать класс Employee, описывающий работника, и создать массив работников банка.
+class Employee {
+  constructor(name, position) {
+    this.name = name;
+    this.position = position;
+  }
+}
+
+new Employee("Sarah", "accountant"),
+let bankEmployees = [
+  new Employee("Tom", "cashier"),
+  new Employee("Mila", "cleaning lady"),
+  new Employee("Ben", "intern"),
+  new Employee("Rebecca", "CEO"),
+];
+
+// Реализовать класс EmpTable для генерации HTML-кода таблицы со списком работников банка. Массив работников необходимо передавать через конструктор, а получать HTML-код с помощью метода getHtml().
+class EmpTable {
+  constructor(employees) {
+    this.employees = employees;
+  }
+  getHtml() {
+    document.write("<table border='1px' cellpadding='3px' cellspacing='0'>");
+    for (let person of this.employees) {
+      document.write(`
+      <tr>
+      <td>${person.name}</td>
+      <td>${person.position}</td>
+      </tr>
+      `);
+    }
+    document.write("</table>");
+  }
+}
+
+// Создать объект класса EmpTable и вывести на экран результат работы метода getHtml().
+let ourTable = new EmpTable(bankEmployees);
+ourTable.getHtml();
