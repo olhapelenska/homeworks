@@ -36,7 +36,7 @@ function closeModal(modal) {
 }
 
 const name = document.getElementById("name");
-const password = document.getElementById("password");
+const email = document.getElementById("email");
 const form = document.getElementById("form");
 const errorElement = document.getElementById("error");
 
@@ -46,16 +46,8 @@ form.addEventListener("submit", (e) => {
     messages.push("Name is required");
   }
 
-  if (password.value.length <= 6) {
-    messages.push("Password must be longer than 6 characters");
-  }
-
-  if (password.value.length >= 20) {
-    messages.push("Password must be less than 20 characters");
-  }
-
-  if (password.value === "password") {
-    messages.push("Password cannot be password");
+  if (email.value === "email") {
+    messages.push("email cannot be email");
   }
 
   if (messages.length > 0) {
@@ -63,6 +55,34 @@ form.addEventListener("submit", (e) => {
     errorElement.innerText = messages.join(", ");
   }
 });
+
+email.addEventListener("input", function (event) {
+  if (email.validity.valid) {
+    emailError.innerHTML = "";
+    emailError.className = "error";
+  } else {
+    showError();
+  }
+});
+
+form.addEventListener("submit", function (event) {
+  if (!email.validity.valid) {
+    showError();
+    event.preventDefault();
+  }
+});
+
+function showError() {
+  if (email.validity.valueMissing) {
+    emailError.textContent = "You need to enter an e-mail address.";
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = "Entered value needs to be an e-mail address.";
+  } else if (email.validity.tooShort) {
+    emailError.textContent = `Email should be at least ${email.minLength} characters; you entered ${email.value.length}.`;
+  }
+
+  emailError.className = "error active";
+}
 
 const toggleButton = document.getElementsByClassName(
   "header__toggle-button"

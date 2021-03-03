@@ -15,7 +15,6 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
     />
     <link rel="stylesheet" href="./dist/style.css" />
-    <script defer src="./app.js"></script>
   </head>
   <body>
     <svg display="none">
@@ -161,7 +160,7 @@
               </div>
             </div>
             <div class="header__scroll">
-              <a class="scroll" href=".footer">
+              <a class="scroll" href="#footer">
                 <svg class="scroll__arrow">
                   <use xlink:href="#scroll"></use>
                 </svg>
@@ -442,16 +441,19 @@
               </div>
               <div class="modal__body">
                 <div id="error"></div>
-                <form id="form" action="/" method="GET">
+                <form id="form" class="modal__form" action="/" method="GET">
+                  <button class="modal__button" type="">
+                    <a href="mailto:webmaster@example.com">Our Email</a>
+                  </button>
                   <div>
                     <label for="name">Name</label>
                     <input id="name" name="name" type="text" required />
                   </div>
                   <div>
-                    <label for="password">Password</label>
-                    <input id="password" name="password" type="password" />
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" />
                   </div>
-                  <button type="submit">Submit</button>
+                  <button class="modal__button" type="submit">Submit</button>
                 </form>
               </div>
             </div>
@@ -461,7 +463,7 @@
             <img src="./images/questions.png" alt="drone" />
           </div>
         </div>
-        <footer class="footer">
+        <footer id="footer" class="footer">
           <!-- <nav class="nav"> -->
           <div class="container footer__nav">
             <div class="footer__logo">
@@ -492,8 +494,19 @@
       </section>
       <script
         type="text/javascript"
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+      ></script>
+      <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"
+      ></script>
+
+      <script
+        type="text/javascript"
         src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
       ></script>
+      <script defer src="./app.js"></script>
     </div>
   </body>
 </html>
