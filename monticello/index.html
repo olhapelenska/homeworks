@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monticello O.P.</title>
+    <script
+      src="https://kit.fontawesome.com/b2ed9865b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="./images/monticello.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+  </head>
+  <body>
+    <svg display="none">
+      <symbol id="scroll" viewBox="0 0 13.5 7.656">
+        <path
+          d="M896.125,616.651l-3.375-3.375,0.844-.844,5.906,5.907,5.906-5.977,0.844,0.844-6.75,6.82-0.844-.843Z"
+          transform="translate(-892.75 -612.375)"
+        />
+      </symbol>
+      <symbol id="search" viewBox="0 0 20 20.062">
+        <path
+          d="M1207.99,445.98l-1.04,1.047-5.77-5.784a6.393,6.393,0,0,1-1.09.8,8.623,8.623,0,0,1-1.24.6,7.282,7.282,0,0,1-1.37.374,8.383,8.383,0,0,1-1.42.125,7.735,7.735,0,0,1-3.16-.648,8.442,8.442,0,0,1-2.56-1.745,7.911,7.911,0,0,1-1.71-2.568,7.82,7.82,0,0,1-.62-3.116,8.06,8.06,0,0,1,2.33-5.734,8.1,8.1,0,0,1,2.56-1.72,8.008,8.008,0,0,1,3.16-.623,7.993,7.993,0,0,1,5.67,2.343,8.35,8.35,0,0,1,1.74,2.568,7.794,7.794,0,0,1,.64,3.166,8.663,8.663,0,0,1-.12,1.421,7.462,7.462,0,0,1-.37,1.371,9.336,9.336,0,0,1-.6,1.246,6.95,6.95,0,0,1-.79,1.1l5.76,5.784h0Zm-19.14-10.919a7.015,7.015,0,0,0,.55,2.792,7.121,7.121,0,0,0,1.54,2.293,7.322,7.322,0,0,0,2.31,1.571,6.992,6.992,0,0,0,2.81.573,6.828,6.828,0,0,0,2.79-.573,7.422,7.422,0,0,0,2.28-1.571,7.547,7.547,0,0,0,1.57-2.293,6.858,6.858,0,0,0,.57-2.792,7.036,7.036,0,0,0-.57-2.817,7.48,7.48,0,0,0-1.57-2.318,7.018,7.018,0,0,0-5.07-2.095,7.274,7.274,0,0,0-2.81.549,7.094,7.094,0,0,0-3.85,3.864,7.2,7.2,0,0,0-.55,2.817h0Z"
+          transform="translate(-1188 -426.969)"
+        />
+      </symbol>
+      <symbol id="save" viewBox="0 0 59.907 59.91">
+        <path
+          d="M900,1619.55a29.925,29.925,0,1,1-11.672,2.32A29.593,29.593,0,0,1,900,1619.55h0Zm0,57.51a26.481,26.481,0,0,0,10.758-2.18,26.615,26.615,0,0,0,14.625-14.62,27.656,27.656,0,0,0,0-21.52,26.615,26.615,0,0,0-14.625-14.62,27.635,27.635,0,0,0-21.516,0,26.615,26.615,0,0,0-14.625,14.62,27.644,27.644,0,0,0,0,21.52,26.615,26.615,0,0,0,14.625,14.62A26.467,26.467,0,0,0,900,1677.06h0Zm15.047-38.25a1.416,1.416,0,0,1,1.195-.56,1.847,1.847,0,0,1,1.336.56,2.178,2.178,0,0,1,.422,1.34,1.4,1.4,0,0,1-.563,1.19l-20.531,19.97a0.637,0.637,0,0,1-.492.35,3.04,3.04,0,0,1-.633.07,3.714,3.714,0,0,1-.773-0.07,0.63,0.63,0,0,1-.492-0.35l-8.016-8.01a1.831,1.831,0,0,1-.562-1.34,1.967,1.967,0,0,1,1.757-1.76,1.818,1.818,0,0,1,1.336.57l6.75,6.75,19.266-18.71h0Z"
+          transform="translate(-870.031 -1619.53)"
+        />
+      </symbol>
+      <symbol id="book" viewBox="0 0 61.31 58.79">
+        <path
+          d="M1310.59,1648.66a5.645,5.645,0,0,1-.29,1.82,4.866,4.866,0,0,1-.84,1.55,4.953,4.953,0,0,1-1.26,1.13,8.117,8.117,0,0,1-1.55.7,8.716,8.716,0,0,1,.7,1.48,5.021,5.021,0,0,1,.28,1.75,5.208,5.208,0,0,1-.28,1.69,8.117,8.117,0,0,1-.7,1.55,9.455,9.455,0,0,1-1.27,1.05,7.3,7.3,0,0,1-1.4.78,8.023,8.023,0,0,1,.7,1.54,5.3,5.3,0,0,1,.28,1.69,5.079,5.079,0,0,1-.28,1.76,8.619,8.619,0,0,1-.7,1.47,5.987,5.987,0,0,1-1.27,1.2,3.638,3.638,0,0,1-1.55.63,4.825,4.825,0,0,1,1.13,3.24,5.024,5.024,0,0,1-.42,1.97,5.229,5.229,0,0,1-1.13,1.68,7.238,7.238,0,0,1-1.83,1.13,5.3,5.3,0,0,1-2.11.42h-18.56a10.433,10.433,0,0,1-2.25-.28,18.428,18.428,0,0,1-2.67-.84,24.043,24.043,0,0,1-2.81-1.06c-0.94-.42-1.88-0.82-2.81-1.19-1.13-.47-2.23-0.94-3.31-1.41a6.852,6.852,0,0,0-2.32-.7h-12.8v-27.43l1.13-.14h10.97a8.942,8.942,0,0,0,2.32-.28,6.385,6.385,0,0,0,2.18-1.12,23.738,23.738,0,0,0,2.88-1.97q1.62-1.275,3.87-3.1a14.178,14.178,0,0,0,5.13-9.14q0.765-5.475.77-6.32a3.249,3.249,0,0,1,.43-1.62,3.023,3.023,0,0,1,1.12-1.2,4.125,4.125,0,0,1,1.48-.77,5.549,5.549,0,0,1,1.47-.21,9.124,9.124,0,0,1,2.25.28,4.526,4.526,0,0,1,2.11,1.27,6.7,6.7,0,0,1,1.55,2.6,13.555,13.555,0,0,1,.56,4.29,29.3,29.3,0,0,1-.35,4.57,36.576,36.576,0,0,1-.91,4.15,23.294,23.294,0,0,1-1.06,3.58c-0.42,1.08-.77,1.99-1.05,2.74h19.12a5.924,5.924,0,0,1,2.18.36,6.08,6.08,0,0,1,1.76,1.05,4.528,4.528,0,0,1,1.05,1.62,5.53,5.53,0,0,1,.36,2.04h0Zm-5.35,2.95a3.638,3.638,0,0,0,1.27-.21,1.709,1.709,0,0,0,.84-0.63,4.309,4.309,0,0,0,.7-0.92,2.331,2.331,0,0,0,.29-1.19,2.713,2.713,0,0,0-.85-1.97,3.008,3.008,0,0,0-2.25-.85h-22.92l0.84-1.68q3.945-9.705,3.94-15.61c0-3.1-.51-4.9-1.55-5.42a6.082,6.082,0,0,0-2.53-.77,3.224,3.224,0,0,0-1.26.42,1.282,1.282,0,0,0-.85,1.13c0,0.56-.04,1.5-0.14,2.81a22.928,22.928,0,0,1-.84,4.5,29.08,29.08,0,0,1-2.04,5.2,14.092,14.092,0,0,1-3.73,4.64c-1.59,1.32-2.93,2.42-4,3.31a26.032,26.032,0,0,1-3.03,2.18,12.412,12.412,0,0,1-2.81,1.26,10.262,10.262,0,0,1-2.95.42h-9.71v22.79h10.41a7.669,7.669,0,0,1,2.6.63c1.08,0.42,2.41.96,4.01,1.62,0.75,0.37,1.57.77,2.46,1.19a25.892,25.892,0,0,0,2.6,1.06c0.94,0.28,1.78.54,2.53,0.77a6.893,6.893,0,0,0,1.97.35h18.56a2.788,2.788,0,0,0,1.27-.28,3.874,3.874,0,0,0,.98-0.7,1.653,1.653,0,0,0,.64-0.85,3.17,3.17,0,0,0,.21-1.12,3.069,3.069,0,0,0-.21-1.2,2.965,2.965,0,0,0-1.62-1.54,3.42,3.42,0,0,0-1.27-.22h-0.28v-2.39h3.24a3.17,3.17,0,0,0,1.12-.21,2.7,2.7,0,0,0,.99-0.63c0.18-.28.37-0.61,0.56-0.98a2.482,2.482,0,0,0,.28-1.13,2.443,2.443,0,0,0-.28-1.12,10.608,10.608,0,0,0-.56-0.99,8.739,8.739,0,0,0-.99-0.56,2.443,2.443,0,0,0-1.12-.28h-0.99v-2.39h3.52a3.17,3.17,0,0,0,1.12-.21,2.728,2.728,0,0,0,.99-0.64,3.874,3.874,0,0,0,.7-0.98,2.452,2.452,0,0,0,.28-1.13,2.745,2.745,0,0,0-.28-1.26,2.152,2.152,0,0,0-.7-0.85,3.758,3.758,0,0,0-.99-0.7,2.443,2.443,0,0,0-1.12-.28h-1.13v-2.39h4.08Z"
+          transform="translate(-1249.28 -1620.09)"
+        />
+      </symbol>
+      <symbol id="logo" viewBox="0 0 241 54">
+        <path
+          d="M237.919,101.4l28.619-.252-20.555-35.19-16.792,29.93-4.52.04,19.305-33.566-3.229-5.527L215,101.6l17.439-.153L246.08,77.136l10.81,18.508-16.649.146Zm44.757,5.589L251.367,53.225l0.37-.219,31.31,53.763Zm2.808-33.178V73.759a9.528,9.528,0,0,1,19.055-.052v0.052A9.528,9.528,0,0,1,285.484,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,299.535,73.811Zm10.089-9.147H314.2l7.278,9.615V64.664h4.852V82.854h-4.3l-7.556-9.979v9.979h-4.852V64.664Zm26.691,4.418h-5.307V64.664h15.517v4.418h-5.307V82.854h-4.9V69.081Zm14.99-4.418h4.929V82.854h-4.929V64.664Zm10.086,9.147V73.759a9.216,9.216,0,0,1,9.325-9.459,8.589,8.589,0,0,1,7.506,3.794l-3.69,2.936a4.7,4.7,0,0,0-3.866-2.131c-2.476,0-4.22,2.157-4.22,4.807v0.052c0,2.729,1.744,4.86,4.22,4.86a4.8,4.8,0,0,0,3.993-2.209l3.69,2.7a8.857,8.857,0,0,1-7.835,4.106A9.112,9.112,0,0,1,361.391,73.811Zm21.586-9.147h14.229v4.288H387.83v2.754h8.491v3.976H387.83v2.885h9.5v4.288H382.977V64.664Zm19.388,0h4.9V78.437h8.567v4.418h-13.47V64.664Zm18.1,0h4.9V78.437h8.568v4.418h-13.47V64.664Zm16.481,9.147V73.759A9.528,9.528,0,0,1,456,73.707v0.052A9.528,9.528,0,0,1,436.945,73.811Zm14.051,0V73.759a4.672,4.672,0,0,0-4.549-4.912,4.582,4.582,0,0,0-4.473,4.859v0.052a4.667,4.667,0,0,0,4.524,4.912A4.586,4.586,0,0,0,451,73.811ZM266.424,78.482V72.459l4.5,7.069h0.1l4.524-7.121V82.854h4.877V64.664h-5.181l-4.22,7.042-4.22-7.042h-5.181v5.574Zm20.07,14.225h0.678v6.061h-0.678V92.707Zm5.875,0h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L293.03,93.8v4.97h-0.661V92.707Zm11.811,0.631h-2.018V92.707h4.722v0.631h-2.018v5.429H304.18V93.338Zm7.414-.631h4.345V93.33h-3.666V95.4h3.279v0.623h-3.279v2.121h3.708v0.624h-4.387V92.707Zm9.191,0h2.585a2.358,2.358,0,0,1,1.708.606,1.685,1.685,0,0,1,.463,1.194v0.017a1.767,1.767,0,0,1-1.63,1.766l1.845,2.477h-0.833l-1.742-2.355h-1.717v2.355h-0.679V92.707Zm2.524,3.091a1.335,1.335,0,0,0,1.545-1.246V94.533a1.279,1.279,0,0,0-1.536-1.2h-1.854V95.8h1.845Zm7.123-3.091h0.636l3.786,4.857V92.707h0.661v6.061h-0.541l-3.881-4.97v4.97h-0.661V92.707Zm12.446-.044h0.635l2.739,6.1h-0.73l-0.7-1.6h-3.271l-0.713,1.6h-0.695Zm1.674,3.888-1.365-3.092-1.374,3.092h2.739Zm7.14-3.213h-2.018V92.707H354.4v0.631h-2.018v5.429h-0.686V93.338Zm7.475-.631h0.677v6.061h-0.677V92.707Zm5.609,3.047V95.737a3.066,3.066,0,1,1,6.13-.018v0.018A3.066,3.066,0,1,1,364.776,95.754Zm5.426,0V95.737a2.4,2.4,0,0,0-2.37-2.5,2.372,2.372,0,0,0-2.352,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,370.2,95.754Zm5.577-3.047h0.636l3.786,4.857V92.707h0.661v6.061h-0.541L376.44,93.8v4.97h-0.661V92.707Zm12.446-.044h0.636l2.738,6.1H390.87l-0.7-1.6H386.9l-0.713,1.6h-0.695Zm1.675,3.888-1.366-3.092-1.373,3.092H389.9Zm6.324-3.844H396.9v5.428h3.382v0.633h-4.061V92.707Zm14.5,3.047V95.737a3.03,3.03,0,0,1,3.013-3.135,3.146,3.146,0,0,1,2.24.806l-0.437.519a2.549,2.549,0,0,0-1.828-.692,2.359,2.359,0,0,0-2.285,2.485v0.018a2.334,2.334,0,0,0,2.379,2.519,2.817,2.817,0,0,0,1.734-.606V96.143h-1.828V95.529h2.48v2.415a3.621,3.621,0,0,1-2.413.926A2.959,2.959,0,0,1,410.725,95.754Zm10.436-3.047h2.585a2.358,2.358,0,0,1,1.708.606,1.682,1.682,0,0,1,.464,1.194v0.017a1.767,1.767,0,0,1-1.631,1.766l1.845,2.477H425.3l-1.742-2.355H421.84v2.355h-0.679V92.707Zm2.524,3.091a1.336,1.336,0,0,0,1.546-1.246V94.533a1.28,1.28,0,0,0-1.537-1.2H421.84V95.8h1.845Zm6.857-.044V95.737a3.065,3.065,0,1,1,6.129-.018v0.018A3.065,3.065,0,1,1,430.542,95.754Zm5.425,0V95.737a2.4,2.4,0,0,0-2.369-2.5,2.372,2.372,0,0,0-2.353,2.485v0.018a2.4,2.4,0,0,0,2.37,2.5A2.372,2.372,0,0,0,435.967,95.754Zm5.484,0.476V92.707h0.678v3.48a1.777,1.777,0,0,0,1.837,2.043,1.736,1.736,0,0,0,1.812-2V92.707h0.678v3.472A2.507,2.507,0,1,1,441.451,96.231Zm10.05-3.523h2.25A1.961,1.961,0,0,1,456,94.629v0.017a2.078,2.078,0,0,1-2.361,1.983H452.18v2.139H451.5V92.707Zm2.164,3.3a1.429,1.429,0,0,0,1.648-1.334V94.655a1.362,1.362,0,0,0-1.614-1.316H452.18V96h1.485Z"
+          transform="translate(-215 -53)"
+        />
+      </symbol>
+    </svg>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+          <div class="container header__nav">
+            <div class="header__logo">
+              <svg class="logo_icon">
+                <use xlink:href="#logo"></use>
+              </svg>
+            </div>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">gallery</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#get-in-touch">map</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#footer">contact</a>
+              </li>
+            </ul>
+            <div class="burger">
+              <div class="line 1"></div>
+              <div class="line 2"></div>
+              <div class="line 3"></div>
+            </div>
+            <div class="header__icons">
+              <div>
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="slider">
+          <div class="header__banner">
+            <div class="container header__container">
+              <div class="header__main">
+                <div class="main__text">
+                  <h1>simple & modern</h1>
+                  <p>we make the world's beautiful every day</p>
+                </div>
+              </div>
+              <div class="header__scroll">
+                <a class="scroll" href=".footer">
+                  <svg class="scroll__arrow">
+                    <use xlink:href="#scroll"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="header__banner">
+            <div class="container header__container">
+              <div class="header__main">
+                <div class="main__text">
+                  <h1>simple & modern</h1>
+                  <p>we make the world's beautiful every day</p>
+                </div>
+              </div>
+              <div class="header__scroll">
+                <div class="header__scroll">
+                  <a href=".footer" class="flowing-scroll other-class">
+                    <svg class="scroll__arrow">
+                      <use xlink:href="#scroll"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__banner">
+            <div class="container header__container">
+              <div class="header__main">
+                <div class="main__text">
+                  <h1>simple & modern</h1>
+                  <p>we make the world's beautiful every day</p>
+                </div>
+              </div>
+              <div class="header__scroll">
+                <div class="header__scroll">
+                  <a href=".footer" class="flowing-scroll other-class">
+                    <svg class="scroll__arrow">
+                      <use xlink:href="#scroll"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__banner">
+            <div class="container header__container">
+              <div class="header__main">
+                <div class="main__text">
+                  <h1>simple & modern</h1>
+                  <p>we make the world's beautiful every day</p>
+                </div>
+              </div>
+              <div class="header__scroll">
+                <div class="header__scroll">
+                  <a href=".footer" class="flowing-scroll other-class">
+                    <svg class="scroll__arrow">
+                      <use xlink:href="#scroll"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header__banner">
+            <div class="container header__container">
+              <div class="header__main">
+                <div class="main__text">
+                  <h1>simple & modern</h1>
+                  <p>we make the world's beautiful every day</p>
+                </div>
+              </div>
+              <div class="header__scroll">
+                <div class="header__scroll">
+                  <a href=".footer" class="flowing-scroll other-class">
+                    <svg class="scroll__arrow">
+                      <use xlink:href="#scroll"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="gallery" id="gallery">
+        <div class="gallery__container">
+          <h2 class="gallery__title">Gallery</h2>
+
+          <div class="gallery__buttons">
+            <button class="btn btn-default filter-button" data-filter="all">
+              All Buildings
+            </button>
+            <button class="btn btn-default filter-button" data-filter="white">
+              White Buildings
+            </button>
+            <button class="btn btn-default filter-button" data-filter="blue">
+              Blue Buildings
+            </button>
+            <button class="btn btn-default filter-button" data-filter="orange">
+              Orange Buildings
+            </button>
+          </div>
+          <div class="gallery__items">
+            <div class="gallery_product filter white">
+              <a
+                href="./images/white-fence.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="./images/white-fence.jpg" class="img-responsive"
+              /></a>
+            </div>
+
+            <div class="gallery_product filter white">
+              <a
+                href="./images/grey-sky.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="./images/grey-sky.jpg" class="img-responsive"
+              /></a>
+            </div>
+
+            <div class="gallery_product filter orange">
+              <a
+                href="./images/orange-building.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="./images/orange-building.jpg" class="img-responsive"
+              /></a>
+            </div>
+
+            <div class="gallery_product filter blue">
+              <a
+                href="./images/blue building.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img src="./images/blue building.jpg" class="img-responsive"
+              /></a>
+            </div>
+
+            <div class="gallery_product filter white">
+              <a
+                href="./images/white-triangle-building.jpg"
+                data-fancybox="gallery"
+                data-caption="Caption #1"
+              >
+                <img
+                  src="./images/white-triangle-building.jpg"
+                  class="img-responsive"
+              /></a>
+            </div>
+          </div>
+          <button class="gallery__btn">see more</button>
+        </div>
+      </section>
+      <section class="get-in-touch" id="get-in-touch">
+        <div class="get-in-touch__map" id="map"></div>
+        <div class="get-in-touch__form">
+          <h2>get in touch</h2>
+          <div class="form">
+            <div>
+              <address>
+                <i class="fas fa-map-marker-alt"></i>
+                <p>91 nolan extensions suite 670</p>
+              </address>
+              <div>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:123-456-7890">+123-456-7890</a>
+              </div>
+              <div>
+                <i class="fas fa-inbox"></i>
+                <a href="mailto:webmaster@somedomain.com"
+                  >webmaster@somedomain.com</a
+                >
+              </div>
+              <div>
+                <i class="far fa-clock"></i>
+                <p>From <time>7:05</time>AM to <time>19:30</time>PM</p>
+              </div>
+            </div>
+            <form novalidate>
+              <p>
+                <label for="mail">
+                  <span>Please enter an email address:</span>
+                  <input
+                    type="email"
+                    id="mail"
+                    name="mail"
+                    required
+                    minlength="8"
+                    placeholder="Email"
+                  />
+                  <span class="error" aria-live="polite"></span>
+                </label>
+              </p>
+              <button>Submit</button>
+            </form>
+          </div>
+        </div>
+        <footer class="footer" id="footer">
+          <div class="footer__container">
+            <svg class="logo_icon">
+              <use xlink:href="#logo"></use>
+            </svg>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js "></script>
+    <script type="text/javascript" src="./script.js"></script>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
